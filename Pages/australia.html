@@ -1,0 +1,1302 @@
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/asset">
+        <link rel="stylesheet" href="/css/index.css">
+    
+
+    <style>
+:root {
+    --aussie-green: #006847;
+    --aussie-gold: #FFB81C;
+    --aussie-blue: #0051A5;
+    --navy: #002147;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+   .logoimage{
+       width: 30vh;  
+       margin: 0 ;
+       padding-bottom: 3vh;
+    }
+    .logocontainer{
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     margin: 5px;
+    }
+    #icons{
+        display: flex;
+        align-items: center;
+        align-self: center;
+        grid-gap: 5px;
+    }
+    .flag-stripe {
+    height: 4px;
+    background: linear-gradient(to right, 
+        var(--aussie-green) 0%, var(--aussie-green) 50%, 
+        var(--aussie-gold) 50%, var(--aussie-gold) 100%);
+}
+
+.hero-title {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+}
+
+.mono-text {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.1em;
+}
+
+
+
+.bg-cream {
+    
+}
+
+
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-number {
+    font-size: 10rem;
+    font-weight: 900;
+    opacity: 0.03;
+    position: absolute;
+    line-height: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+    </style>
+    </head>
+
+    <body  >
+    <div class="flag-stripe"></div> 
+        <!-- Navbar -->
+            <nav class="stroke-black-500 fixed top-4 z-50   rounded-full py left-1/2 -translate-x-1/2 " style="backdrop-filter: blur(10px);     background-color: transparent;
+            width: 95%; box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3  ">
+
+                    <!-- Logo -->
+                    <a href="/index.html" class="flex items-center space-x-3">
+                        <img src="/assets/Others/logo with text .png" class="h-10" alt="Logo">
+                    </a>
+
+                    <!-- Mobile Toggle -->
+                    <button data-collapse-toggle="navbar-default" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-default" 8 aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+
+                    <!-- Menu -->
+                    <div id="navbar-default" class="hidden md:block
+                md:relative absolute
+                left-0 w-full
+                md:w-auto
+                mt-2 md:mt-0
+                px-4 md:px-0">
+                        <ul
+                            class="flex flex-col md:flex-row md:items-center md:space-x-1 mt-4 md:mt-0 bg-gray-50 md:bg-transparent rounded-lg p-2 md:p-0">
+
+                            <li>
+                                <a href="/index.html"
+                                    class="  my-section nav-link  block px-4 py-2 font-semibold text-black rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="dropdown relative">
+                                <a href="#"
+                                    class="  my-section nav-link  block px-4 py-2 font-semibold text-black rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                                    Study Destination
+
+
+                                </a>
+
+                                <div class="dropdown-menu absolute left-0 mt-2 rounded-lg shadow-lg py-1 z-50 opacity-0 invisible transition-all duration-300 transform -translate-y-2 border border-gray-100"
+                                    style="width: 195px; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.7);">
+                                    <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                                        Countries</div>
+                                    <a href="#"
+                                        class="block px-4 py-2.5 text-black hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                        <img src="/assets/Flag/america_flag.png" class="h-4 px-2" alt="America Flag"> America
+                                    </a> <a href="#"
+                                        class="block px-4 py-2.5 text-black hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                        <img src="/assets/Flag/australia_flag.png" class="h-4 px-2" alt="Australia Flag">
+                                        Australia </a> <a href="#"
+                                        class="block px-4 py-2.5 text-black hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                        <img src="/assets/Flag/germany_flag.png" class="h-4 px-2" alt="Germany Flag"> Germany
+                                    </a>
+                                    <div class="border-t border-gray-100 my-1"></div> <a href="#"
+                                        class="block px-4 py-2.5 text-black hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                        <img src="/assets/Flag/united_kingdom_flag.png" class="h-4 px-2" alt="Uk Flag"> United
+                                        Kingdom </a>
+                                </div>
+                            </li>
+
+                            <li class="dropdown relative">
+                                <a href="#"
+                                    class="  my-section nav-link block px-4 py-2 font-semibold text-black rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                                    Programs
+                                </a>
+                                <div
+                                    class="dropdown-menu absolute left-0 mt-2 w-64 rounded-lg shadow-lg py-1 z-50 opacity-0 invisible transition-all duration-300 transform -translate-y-2 border border-gray-100"
+                                    style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.7);">
+                                    <div class="grid grid-cols- gap-1 p-2"> <a href="#"
+                                            class="flex items-center p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+                                            <div class="bg-blue-100 p-2 rounded-lg mr-3"> <i
+                                                    class="fas fa-book text-blue-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-medium text-black">Undergraduate</div>
+                                                <div class="text-xs text-gray-600">Proceeded after +2 study in Nepal</div>
+                                            </div>
+                                        </a> <a href="#"
+                                            class="flex items-center p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+                                            <div class="bg-red-100 p-2 rounded-lg mr-3"> <i
+                                                    class="fas fa-headset text-red-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-medium text-black">Master's Degree</div>
+                                                <div class="text-xs text-gray-600">Proceeded after bachelors in Nepal</div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="  my-section nav-link block px-4 py-2 font-semibold text-black rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                                    Process
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/Pages/contact.html"
+                                    class="  my-section nav-link block px-4 py-2 font-semibold text-black rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        <!--Top section-->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto relative z-10 w-full">
+        <div class="text-center animate-fade-in">
+            <span class="text-green-600 text-base sm:text-lg md:text-xl">Study Destination</span>
+            <h1 class="mt-5 hero-title text-5  xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-6 font-semibold leading-tight" style="color: var(--aussie-green);">
+                AUSTRALIA
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed px-4">
+                Where world-class education meets laid-back lifestyle. <br class="hidden sm:block"> Experience excellence down under.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!--Box Section-->
+
+
+    <div class="grid grid-cols-2 gap-6 mt-20 animate-fade-in delay-3 max-w-4xl mx-auto">
+        <div class="text-center p-6 bg-white/80 backdrop-blur rounded-lg shadow-xl card-hover">
+            <div class="text-6xl font-bold text-red-600">5K+</div>
+            <div class="text-xs text-gray-600 mt-2 font-semibold tracking-wide">UNIVERSITIES</div>
+        </div>
+        <div class="text-center p-6 bg-white/80 backdrop-blur rounded-lg shadow-xl card-hover">
+            <div class="text-6xl font-bold text-blue-900">1M+</div>
+            <div class="text-xs text-gray-600 mt-2 font-semibold tracking-wide">INT'L STUDENTS</div>
+        </div>
+        <div class="text-center p-6 bg-white/80 backdrop-blur rounded-lg shadow-xl card-hover">
+            <div class="text-6xl font-bold text-red-600">3</div>
+            <div class="text-xs text-gray-600 mt-2 font-semibold tracking-wide">YEAR OPT</div>
+        </div>
+        <div class="text-center p-6 bg-white/80 backdrop-blur rounded-lg shadow-xl card-hover">
+            <div class="text-6xl font-bold text-blue-900">#1</div>
+            <div class="text-xs text-gray-600 mt-2 font-semibold tracking-wide">GLOBAL RANK</div>
+        </div>
+    </div>
+
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-24 px-4 stripe-bg relative">
+        <div class="absolute top-0 right-0 section-number" style="color: var(--red);"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="mb-16 text-center">
+                <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">ACADEMIC PATHWAYS</div>
+                <h2 class="hero-title text-6xl md:text-7xl mb-6 text-navy">Programs Available</h2>
+                <p class="text-xl mb-4  text-gray-600 max-w-2xl mx-auto">
+                    From undergraduate to doctoral programs, find your perfect academic path
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 px-2">
+                <!-- Undergraduate -->
+                <div class="relative bg-white p-10 shadow-2xl card-hover border-t-4 border-red-600 overflow-hidden group">
+                    <!-- Color overlay on hover -->
+                    <div class="absolute inset-0 bg-red-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition">
+                            <i class="fas fa-graduation-cap text-3xl text-red-600 "></i>
+                        </div>
+                        <h3 class="hero-title text-4xl mb-4 text-navy ">Undergraduate</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed ">
+                            Bachelor's degrees (4 years). Liberal arts education with major flexibility. Start after +2 completion.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-red-600 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Duration: 4 years</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-red-600 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Entry: After high school/+2</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-red-600 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Test: SAT/ACT + TOEFL/IELTS</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-3 border-2 border-navy text-navy mono-text font-bold hover:bg-white hover:text-navy transition group-hover:border-white group-hover:text-white group-hover:bg-transparent">
+                            LEARN MORE
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Graduate -->
+                <div class="relative bg-white p-10 shadow-2xl card-hover border-t-4 border-blue-900 overflow-hidden group">
+                    <!-- Color overlay on hover -->
+                    <div class="absolute inset-0 bg-blue-900 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 ">
+                            <i class="fas fa-user-graduate text-3xl text-blue-900 "></i>
+                        </div>
+                        <h3 class="hero-title text-4xl mb-4 text-navy ">Master's Degree</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed ">
+                            Advanced specialization in your field. 1-2 year programs with research or coursework focus.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-900 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Duration: 1-2 years</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-900 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Entry: After bachelor's</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-900 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Test: GRE/GMAT + TOEFL/IELTS</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-3 border-2 border-navy text-navy mono-text font-bold hover:bg-white ">
+                            LEARN MORE
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PhD -->
+                <div class="relative bg-white p-10 shadow-2xl card-hover border-t-4 border-gold overflow-hidden group">
+                    <!-- Color overlay on hover -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-orange-600 transform translate-y-full "></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 ">
+                            <i class="fas fa-flask text-3xl " style="color: var(--gold);"></i>
+                        </div>
+                        <h3 class="hero-title text-4xl mb-4 text-navy ">PhD Programs</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed ">
+                            Research-intensive doctoral programs. Often fully funded with stipends and tuition waivers.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-3 " style="color: var(--gold);"></i>
+                                <span class="text-gray-700 ">Duration: 4-6 years</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-3 " style="color: var(--gold);"></i>
+                                <span class="text-gray-700 ">Entry: After master's/bachelor's</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mt-1 mr-3 " style="color: var(--gold);"></i>
+                                <span class="text-gray-700 ">Often fully funded</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-3 border-2 border-navy text-navy mono-text font-bold hover:bg-white hover:text-navy transition group-hover:border-white group-hover:text-white group-hover:bg-transparent">
+                            LEARN MORE
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Community College / Pathway Programs -->
+                <div class="relative bg-white p-10 shadow-2xl card-hover border-t-4 border-green-600 overflow-hidden group">
+                    
+                    <div class="absolute inset-0 bg-green-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition">
+                            <i class="fas fa-route text-3xl text-green-600 "></i>
+                        </div>
+                        <h3 class="hero-title text-4xl mb-4 text-navy ">Pathway Programs</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed ">
+                            Community colleges and pathway programs. Affordable entry with transfer options to top universities.
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Duration: 2 years</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Cost-effective pathway</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3 "></i>
+                                <span class="text-gray-700 ">Transfer to 4-year universities</span>
+                            </li>
+                        </ul>
+                        <button class="w-full py-3 border-2 border-navy text-navy mono-text font-bold hover:bg-white hover:text-navy transition group-hover:border-white group-hover:text-white group-hover:bg-transparent">
+                            LEARN MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Affordable Universities Section -->
+    <section id="universities" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mt-5 mx-auto">
+            <div class="mb-16 text-center">
+                <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">BUDGET-FRIENDLY EDUCATION</div>
+                <h2 class="hero-title text-6xl md:text-7xl mb-6 text-navy">Affordable Universities</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Quality education without breaking the bank. Excellent institutions with reasonable tuition fees.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 mt-5 lg:grid-cols-4 gap-6">
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl  mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">University of the Sunshine Coast (USC)</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Sunshine Coast, QLD</p>
+                    <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
+                </div>
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">University of Southern Queensland (UniSQ)</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Toowoomba, QLD</p>
+                    <p class="text-xs text-green-600 font-bold">AUD $24,800-$32,000/year</p>
+                </div>
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">Federation University Australia</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Ballarat, VIC</p>
+                    <p class="text-xs text-green-600 font-bold">$AUD $24,000-$29,000/year</p>
+                </div>
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">University of New England (UNE)</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Armidale, NSW</p>
+                    <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
+                </div>
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">Charles Sturt University (CSU)</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Multiple Regional Campuses, NSW</p>
+                    <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
+                </div>
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">Southern Cross University (SCU)</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Lismore / Gold Coast, NSW/QLD</p>
+                    <p class="text-xs text-green-600 font-bold">AUD $25,000-$31,000/year</p>
+                </div>
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">Central Queensland University (CQUniversity)</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Rockhampton, QLD</p>
+                    <p class="text-xs text-green-600 font-bold">AUD $25,000-$32,000/year</p>
+                </div>
+                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h4 class="font-bold text-xl mb-2 text-navy">Victoria University (VU)</h4>
+                    <p class="text-sm text-gray-600 mono-text mb-2">Melbourne, VIC</p>
+                    <p class="text-xs text-green-600 font-bold">AUD $25,000-$30,000/year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+
+    <!-- Application Process Section with Tree Structure -->
+    <section id="process" class="py-24 px-4 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="mb-16 text-center">
+                <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">YOUR JOURNEY BEGINS HERE</div>
+                <h2 class="hero-title text-6xl md:text-7xl mb-6 text-navy">Application Process</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Follow this step-by-step roadmap to achieve your Australian dream
+                </p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="max-w-5xl mx-auto relative">
+                <!-- Vertical Line - Hidden on mobile, visible on desktop -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-600 via-blue-900 to-red-600 top-0"></div>
+
+                <!-- Mobile Vertical Line -->
+                <div class="md:hidden absolute left-8 w-1 h-full bg-gradient-to-b from-red-600 via-blue-900 to-red-600 top-0"></div>
+
+                <!-- Step 1: Research & Planning -->
+                <div class="relative  mb-12 md:mb-16">
+                    <!-- Mobile Layout -->
+                    <div class="md:hidden flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                                <i class="fas fa-search text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 mt8 pt-2">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-red-600">
+                                <div class="mono-text text-xs text-red-600 mb-2">STEP 01</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Research & Planning</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Explore Australian universities, courses, and requirements. Shortlist 5-8 institutions that match your academic profile and career goals.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">4-6 months before</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout -->
+                    <div class="hidden  md:flex items-center">
+                        <!-- Left Side -->
+                        <div class="w-[calc(50%-2rem)] pr-8 mt-8 text-right">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-red-600 card-hover">
+                                <div class="mono-text text-xs text-red-600 mb-2">STEP 01</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Research & Planning</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Explore Australian universities, courses, and requirements. Shortlist 5-8 institutions that match your academic profile and career goals.
+                                </p>
+                                <div class="mt-4 flex justify-end">
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">4-6 months before</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Node -->
+                        <div class="flex-shrink-0 z-10">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                                <i class="fas fa-search text-white text-xl"></i>
+                            </div>
+                        </div>
+
+                        <!-- Right Side Empty -->
+                        <div class="w-[calc(50%-2rem)]"></div>
+                    </div>
+                </div>
+
+                <!-- Step 2: English Proficiency Test -->
+                <div class="relative mb-12 md:mb-16">
+                    <!-- Mobile Layout -->
+                    <div class="md:hidden flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                                <i class="fas fa-pencil-alt text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <div class="bg-white  p-6 rounded-lg shadow-xl border-l-4 border-blue-900">
+                                <div class="mono-text text-xs mt-8 text-blue-900 mb-2">STEP 02</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">English Proficiency Test</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                    Prepare for and take English language test:
+                                </p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• IELTS Academic (most common)</li>
+                                    <li>• TOEFL iBT or PTE Academic</li>
+                                    <li>• Cambridge English Advanced</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">3-4 months before</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout -->
+                    <div class="hidden  md:flex items-center">
+                        <!-- Left Side Empty -->
+                        <div class="w-[calc(50%-2rem)] "></div>
+
+                        <!-- Center Node -->
+                        <div class="flex-shrink-0 z-10">
+                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                                <i class="fas fa-pencil-alt text-white text-xl"></i>
+                            </div>
+                        </div>
+
+                        <!-- Right Side -->
+                        <div class="w-[calc(50%-2rem)] mt-8 pl-8">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-r-4 border-blue-900 card-hover">
+                                <div class="mono-text text-xs text-blue-900 mb-2">STEP 02</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">English Proficiency Test</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                    Prepare for and take English language test:
+                                </p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• IELTS Academic (most common)</li>
+                                    <li>• TOEFL iBT or PTE Academic</li>
+                                    <li>• Cambridge English Advanced</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">3-4 months before</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Document Preparation -->
+                <div class="relative mb-12 md:mb-16">
+                    <!-- Mobile Layout -->
+                    <div class="md:hidden flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                                <i class="fas fa-file-alt text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-red-600">
+                                <div class="mono-text text-xs text-red-600 mb-2">STEP 03</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Document Preparation</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                    Gather and prepare all required documents:
+                                </p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Certified academic transcripts</li>
+                                    <li>• Statement of Purpose</li>
+                                    <li>• Academic/Professional references</li>
+                                    <li>• CV and passport copy</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-3 months before</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout -->
+                    <div class="hidden md:flex items-center">
+                        <!-- Left Side -->
+                        <div class="w-[calc(50%-2rem)] mt-8 pr-8 text-right">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-red-600 card-hover">
+                                <div class="mono-text text-xs text-red-600 mb-2">STEP 03</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Document Preparation</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                    Gather and prepare all required documents:
+                                </p>
+                                <ul class="text-sm text-gray-600 space-y-1 text-left">
+                                    <li>• Certified academic transcripts</li>
+                                    <li>• Statement of Purpose</li>
+                                    <li>• Academic/Professional references</li>
+                                    <li>• CV and passport copy</li>
+                                </ul>
+                                <div class="mt-4 flex justify-end">
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-3 months before</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Node -->
+                        <div class="flex-shrink-0 z-10">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                                <i class="fas fa-file-alt text-white text-xl"></i>
+                            </div>
+                        </div>
+
+                        <!-- Right Side Empty -->
+                        <div class="w-[calc(50%-2rem)] "></div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Submit Applications -->
+                <div class="relative mb-12 md:mb-16">
+                    <!-- Mobile Layout -->
+                    <div class="md:hidden flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                                <i class="fas fa-paper-plane text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-blue-900">
+                                <div class="mono-text text-xs text-blue-900 mb-2">STEP 04</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Submit Applications</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Apply directly through university websites or authorized agents. Pay application fees and submit all required materials.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Aug-Oct / Feb-Apr</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout -->
+                    <div class="hidden md:flex items-center">
+                        <!-- Left Side Empty -->
+                        <div class="w-[calc(50%-2rem)] "></div>
+
+                        <!-- Center Node -->
+                        <div class="flex-shrink-0 z-10">
+                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                                <i class="fas fa-paper-plane text-white text-xl"></i>
+                            </div>
+                        </div>
+
+                        <!-- Right Side -->
+                        <div class="w-[calc(50%-2rem)] mt-8 pl-8">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-r-4 border-blue-900 card-hover">
+                                <div class="mono-text text-xs text-blue-900 mb-2">STEP 04</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Submit Applications</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Apply directly through university websites or authorized agents. Pay application fees and submit all required materials.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Aug-Oct / Feb-Apr</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: Receive Offer Letter -->
+                <div class="relative mb-12 md:mb-16">
+                    <!-- Mobile Layout -->
+                    <div class="md:hidden flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                                <i class="fas fa-envelope-open-text text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-red-600">
+                                <div class="mono-text text-xs text-red-600 mb-2">STEP 05</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Receive Offer Letter</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Universities typically respond within 2-6 weeks. You'll receive either a Conditional or Unconditional Offer Letter based on your application.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-6 weeks wait</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout -->
+                    <div class="hidden md:flex items-center">
+                        <!-- Left Side -->
+                        <div class="w-[calc(50%-2rem)] mt-8 pr-8 text-right">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-red-600 card-hover">
+                                <div class="mono-text text-xs text-red-600 mb-2">STEP 05</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Receive Offer Letter</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Universities typically respond within 2-6 weeks. You'll receive either a Conditional or Unconditional Offer Letter based on your application.
+                                </p>
+                                <div class="mt-4 flex justify-end">
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-6 weeks wait</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Node -->
+                        <div class="flex-shrink-0 z-10">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                                <i class="fas fa-envelope-open-text text-white text-xl"></i>
+                            </div>
+                        </div>
+
+                        <!-- Right Side Empty -->
+                        <div class="w-[calc(50%-2rem)]"></div>
+                    </div>
+                </div>
+
+                <!-- Step 6: Accept Offer & Pay Fees -->
+                <div class="relative mb-12 md:mb-16">
+                    <!-- Mobile Layout -->
+                    <div class="md:hidden flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                                <i class="fas fa-check-circle text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-blue-900">
+                                <div class="mono-text text-xs text-blue-900 mb-2">STEP 06</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Accept Offer & Pay Fees</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Accept your offer, pay tuition deposit and OSHC. University will issue Confirmation of Enrollment (CoE) for visa application.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Within offer deadline</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout -->
+                    <div class="hidden md:flex items-center">
+                        <!-- Left Side Empty -->
+                        <div class="w-[calc(50%-2rem)]"></div>
+
+                        <!-- Center Node -->
+                        <div class="flex-shrink-0 z-10">
+                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                                <i class="fas fa-check-circle text-white text-xl"></i>
+                            </div>
+                        </div>
+
+                        <!-- Right Side -->
+                        <div class="w-[calc(50%-2rem)] mt-8 pl-8">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-r-4 border-blue-900 card-hover">
+                                <div class="mono-text text-xs text-blue-900 mb-2">STEP 06</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Accept Offer & Pay Fees</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">
+                                    Accept your offer, pay tuition deposit and OSHC. University will issue Confirmation of Enrollment (CoE) for visa application.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Within offer deadline</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 7: Apply for Student Visa -->
+                <div class="relative">
+                    <!-- Mobile Layout -->
+                    <div class="md:hidden flex gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                                <i class="fas fa-passport text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-green-600">
+                                <div class="mono-text text-xs text-green-600 mb-2">STEP 07</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Student Visa (Subclass 500)</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                    Apply for Australian student visa online:
+                                </p>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Create ImmiAccount</li>
+                                    <li>• Upload CoE and documents</li>
+                                    <li>• Pay visa application fee (A$710)</li>
+                                    <li>• Complete health check & biometrics</li>
+                                    <li>• Arrange GTE statement</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">2-4 months processing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout -->
+                    <div class="hidden md:flex items-center">
+                        <!-- Left Side -->
+                        <div class="w-[calc(50%-2rem)] mt-8 pr-8 text-right">
+                            <div class="bg-white p-6 rounded-lg shadow-xl border-l-4 border-green-600 card-hover">
+                                <div class="mono-text text-xs text-green-600 mb-2">STEP 07</div>
+                                <h3 class="hero-title text-2xl mb-3 text-navy">Student Visa (Subclass 500)</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                    Apply for Australian student visa online:
+                                </p>
+                                <ul class="text-sm text-gray-600 space-y-1 text-left">
+                                    <li>• Create ImmiAccount</li>
+                                    <li>• Upload CoE and documents</li>
+                                    <li>• Pay visa application fee (A$710)</li>
+                                    <li>• Complete health check & biometrics</li>
+                                    <li>• Arrange GTE statement</li>
+                                </ul>
+                                <div class="mt-4 flex justify-end">
+                                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">2-4 months processing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Node -->
+                        <div class="flex-shrink-0 z-10">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                                <i class="fas fa-passport text-white text-xl"></i>
+                            </div>
+                        </div>
+
+                        <!-- Right Side Empty -->
+                        <div class="w-[calc(50%-2rem)]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Required Documents Section -->
+   <section class="py-24 px-4 bg-navy text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 text-center">
+                <div class="mono-text text-red-500 mb-4 font-semibold text-2xl tracking-widest">CHECKLIST</div>
+                <h2 style="color: black;" class=" font-bold text-6xl md:text-7xl mb-6">Required Documents</h2>
+                <p style="color: black;" class="text-xl mb-4 text-gray-300 max-w-2xl mx-auto">
+                    Everything you need to prepare for a complete Australian university application
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Document 1 -->
+                <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10 card-hover">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 style="color: black;" class="hero-title text-2xl mb-4">Academic Transcripts</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Certified copies of academic records from all previously attended institutions.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Year 12 certificate/marksheets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Bachelor's degree transcripts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Certified English translations</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Document 2 -->
+                <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10 card-hover">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 style="color: black;" class="hero-title text-2xl mb-4">English Proficiency</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Proof of English language proficiency for international students.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>ILETS(6.0)or TOEFL(60+)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>NO SAT/ACT (For undergrad)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>GRE/GMAT (for some graduate business/engineering programs)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Document 3 -->
+                <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10 card-hover">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pencil-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 style="color: black;" class="hero-title text-2xl mb-4">Personal Statement</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Written statement explaining your motivation, background, and career goals.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Statement of Purpose (500-1000 words)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Explain why you chose this course</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Career aspirations</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Document 4 -->
+                <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10 card-hover">
+                    <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-friends text-white text-2xl"></i>
+                    </div>
+                    <h3 style="color: black;" class="hero-title text-2xl mb-4">References</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        1-2 academic or professional references supporting your application.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Academic references preferred</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Professional references accepted</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Contact details required</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Document 5 -->
+                <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10 card-hover">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 style="color: black;" class="hero-title text-2xl mb-4">Resume/CV</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Current CV highlighting your academic achievements, work experience, and skills.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>2-3 pages maximum</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Include relevant experience</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Highlight achievements & skills</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Document 6 -->
+                <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10 card-hover">
+                    <div style="background-color: black;" class="w-16 h-16  rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-passport text-white text-2xl"></i>
+                    </div>
+                    <h3 style="color: black;" class="hero-title text-2xl mb-4">Passport & ID</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Valid passport and identification for student visa application and enrollment.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Valid passport (6+ months)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Birth certificate</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Passport-sized photographs</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;" class="mt-18 text-center">
+                <div class="inline-block mt-12 bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
+                    <p class=" mt-12 text-yellow-300">
+                        <i class=" mt-12 fas fa-lightbulb mr-2"></i>
+                        <strong>Pro Tip:</strong> Most Australian universities have 2 intakes (February & July). Start preparing documents 4-6 months before your intended intake!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="py-24 px-4 bg-cream">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 text-center">
+                <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">INVESTMENT IN YOUR FUTURE</div>
+                <h2 class="hero-title text-6xl md:text-7xl mb-6 text-navy">Financial Requirements</h2>
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Understanding the costs and funding options for studying in America
+                </p>
+            </div>
+
+            <div class="grid mb-12 lg:grid-cols-2 gap-12 mb-16">
+                <!-- Cost Breakdown -->
+                <div class="bg-white p-10 mt-12 rounded-lg shadow-2xl border-t-4 border-red-600">
+                    <h3 style="margin-top: 10px;" class="mt-12 hero-title text-3xl mb-6 text-navy">Annual Cost Breakdown</h3>
+                    
+                    <div class="space-y-6 gap-4">
+                        <div  class="border-b border-gray-200 mr-10 pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-university text-red-600"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;" class="ml-5" >
+                                        <h4  class=" font-bold text-lg text-navy">Tuition Fees</h4>
+                                        <p class="text-sm text-gray-500">Per academic year</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-red-600">AUD $24K-$50K</div>
+                                    <p class="text-xs text-gray-500">Varies by Course/University</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-200 pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-home text-blue-600"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;" >
+                                        <h4 class="font-bold text-lg text-navy">Housing & Food</h4>
+                                        <p class="text-sm text-gray-500">On/off campus</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-blue-900">AUD $11K-$31K</div>
+                                    <p class="text-xs text-gray-500">Depends on location</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-200 pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-book text-green-600"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <h4 class="font-bold text-lg text-navy">Books & Supplies</h4>
+                                        <p class="text-sm text-gray-500">Course materials</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-green-600">AUD $500-$1500</div>
+                                    <p class="text-xs text-gray-500">Per year</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-gray-200 pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-heartbeat text-purple-600"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <h4 class="font-bold text-lg text-navy">Health Insurance</h4>
+                                        <p class="text-sm text-gray-500">Mandatory coverage</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-purple-600">AUD $600-$800</div>
+                                    <p class="text-xs text-gray-500">Annual premium</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-shopping-bag text-yellow-600"></i>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <h4 class="font-bold text-lg text-navy">Personal Expenses</h4>
+                                        <p class="text-sm text-gray-500">Transport, misc.</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-yellow-600">AUD $3K-$6</div>
+                                    <p class="text-xs text-gray-500">Varies by lifestyle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-gradient-to-r from-red-600 to-blue-900 rounded-lg text-white">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm uppercase tracking-wide mb-1">Total Annual Cost</p>
+                                <p class="text-4xl font-bold hero-title">$35K-$75K</p>
+                            </div>
+                            <div class="text-right">
+                                <i class="fas fa-calculator text-5xl opacity-20"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Funding Options -->
+                <div class="bg-white p-10 rounded-lg shadow-2xl border-t-4 border-blue-900">
+                    <h3 style="margin-top: 10px;" class="hero-title text-3xl mb-6 text-navy">Funding Options</h3>
+
+                    <div class="space-y-6">
+                        <!-- Scholarships -->
+                        <div class="p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-award text-white"></i>
+                                </div>
+                                <div style="margin-left: 10px;">
+                                    <h4 class="font-bold text-xl mb-2 text-navy">Scholarships</h4>
+                                    <p class="text-gray-700 mb-3 leading-relaxed">
+                                        Merit-based scholarships available from universities and the Australian Government. Can cover partial to full tuition.
+                                    </p>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• University-specific scholarships (e.g., Vice-Chancellor's)    </li>
+                                        <li>• Australia Awards (Government funded)</li>
+                                        <li>• Destination Australia (Regional scholarships)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Assistantships -->
+                        <div class="p-6 bg-green-50 rounded-lg border-l-4 border-green-600">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chalkboard-teacher text-white"></i>
+                                </div>
+                                <div style="margin-left: 10px;">
+                                    <h4 class="font-bold text-xl mb-2 text-navy">Assistantships (Graduate)</h4>
+                                    <p class="text-gray-700 mb-3 leading-relaxed">
+                                        Rare compared to the U.S. Some research-focused master's and PhDs may include a stipend.
+                                    </p>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Research Assistant (RA) roles for PhD candidates</li>
+                                        
+                                        <li>• APA (Australian Postgraduate Award) for domestic students, some unis extend to internationals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Student Loans -->
+                        <div class="p-6 bg-purple-50 rounded-lg border-l-4 border-purple-600">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-hand-holding-usd text-white"></i>
+                                </div style="margin-left: 10px;">
+                                <div style="margin-left: 10px;">
+                                    <h4 style="margin-left: 10px;"class="font-bold text-xl mb-2 text-navy">Education Loans</h4>
+                                    <p class="text-gray-700 mb-3 leading-relaxed">
+                                        Student loans from banks in Nepal or specialized international education loans.
+                                    </p>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Nepalese bank education loans (Nabil, NIBL, etc.)</li>
+                                        <li>• Prodigy Finance / MPower Financing (for international students)</li>
+                                        <li>• Requires co-signer/collateral in Nepal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- On-Campus Work -->
+                        <div class="p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-600">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-briefcase text-white"></i>
+                                </div >
+                                <div style="margin-left: 10px;">
+                                    <h4 class="font-bold text-xl mb-2 text-navy">On-Campus Work</h4>
+                                    <p class="text-gray-700 mb-3 leading-relaxed">
+                                        Student visa allows work up to 48 hours per fortnight during semester.
+                                    </p>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Hospitality, retail, tutoring</li>
+                                        <li>• Earn AUD $20-$35/hour (minimum wage ~$23.23)</li>
+                                        <li>• Full-time during semester breaks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Proof Required -->
+            <div class="bg-gradient-to-r from-navy to-blue-900 rounded-lg p-10 text-white">
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="hero-title text-3xl mb-6 text-center">Financial Proof for F-1 Visa</h3>
+                    <p style="color: black;" class="text-center text-gray-300 mb-8 text-lg">
+                        You must demonstrate ability to cover first year expenses through:
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-6 bg-white/10 backdrop-blur rounded-lg">
+                            <i class="fas fa-building text-4xl mb-4 text-red-400"></i>
+                            <h4 style="color: black;" class="font-bold text-lg mb-2">Bank Statements</h4>
+                            <p style="color: black;" class="text-sm">6 months of statements showing sufficient funds</p>
+                        </div>
+                        <div class="text-center p-6 bg-white/10 backdrop-blur rounded-lg">
+                            <i class="fas fa-file-invoice-dollar text-4xl mb-4 text-blue-400"></i>
+                            <h4 style="color: black;" class="font-bold text-lg mb-2">Affidavit of Support</h4>
+                            <p style="color: black;" class="text-sm text-gray-300">From sponsor if family is funding</p>
+                        </div>
+                        <div class="text-center p-6 bg-white/10 backdrop-blur rounded-lg">
+                            <i class="fas fa-certificate text-4xl mb-4 text-green-400"></i>
+                            <h4 style="color: black;" class="font-bold text-lg mb-2">Scholarship Letter</h4>
+                            <p  style="color: black;"class="text-sm text-gray-300">Official award letter if applicable</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <button class="px-8 py-4 bg-red-600 text-white mono-text rounded-lg font-bold hover:bg-red-700 transition transform hover:scale-105 shadow-lg">
+                            DOWNLOAD FINANCIAL CHECKLIST
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    </body>
+    </html>
+    </body>
+
+    </html>
