@@ -1,95 +1,106 @@
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="/asset">
-        <link rel="stylesheet" href="/css/index.css">
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/asset">
+    <link rel="stylesheet" href="/css/index.css">
+
 
     <style>
-:root {
-    --aussie-green: #006847;
-    --aussie-gold: #FFB81C;
-    --aussie-blue: #0051A5;
-    --navy: #002147;
-}
+        :root {
+            --aussie-green: #006847;
+            --aussie-gold: #FFB81C;
+            --aussie-blue: #0051A5;
+            --navy: #002147;
+        }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-   .logoimage{
-       width: 30vh;  
-       margin: 0 ;
-       padding-bottom: 3vh;
-    }
-    .logocontainer{
-     display: flex;
-     justify-content: center;
-     align-items: center; 
-     margin: 5px;
-    }
-    #icons{
-        display: flex;
-        align-items: center;
-        align-self: center;
-        grid-gap: 5px;
-    }
-    .flag-stripe {
-    height: 4px;
-    background: linear-gradient(to right, 
-        var(--aussie-green) 0%, var(--aussie-green) 50%, 
-        var(--aussie-gold) 50%, var(--aussie-gold) 100%);
-}
+        .logoimage {
+            width: 30vh;
+            margin: 0;
+            padding-bottom: 3vh;
+        }
 
-.hero-title {
-    font-family: 'Georgia', serif;
-    font-weight: 700;
-}
+        .logocontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
 
-.mono-text {
-    font-family: 'Courier New', monospace;
-    letter-spacing: 0.1em;
-}
+        #icons {
+            display: flex;
+            align-items: center;
+            align-self: center;
+            grid-gap: 5px;
+        }
+
+        .flag-stripe {
+            height: 4px;
+            background: linear-gradient(to right,
+                    var(--aussie-green) 0%, var(--aussie-green) 50%,
+                    var(--aussie-gold) 50%, var(--aussie-gold) 100%);
+        }
+
+        .hero-title {
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+        }
+
+        .mono-text {
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.1em;
+        }
 
 
 
 
 
 
-.animate-fade-in {
-    animation: fadeIn 1s ease-in;
-}
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in;
+        }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-.section-number {
-    font-size: 10rem;
-    font-weight: 900;
-    opacity: 0.03;
-    position: absolute;
-    line-height: 1;
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
+        .section-number {
+            font-size: 10rem;
+            font-weight: 900;
+            opacity: 0.03;
+            position: absolute;
+            line-height: 1;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
     </style>
-    </head>
+</head>
 
-    <body  >
-    <div class="flag-stripe"></div> 
-        <!-- Nav  bar start -->
+<body>
+    <div class="flag-stripe"></div>
+   <!-- Nav  bar start -->
     <nav class=" fixed top-4 z-50 shadow rounded-full py left-1/2 -translate-x-1/2 " style=" background-color: #ffffff;
     width: 95%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3  ">
@@ -128,7 +139,7 @@ html, body {
                     </li>
 
                     <li class="dropdown relative">
-                        <a href="#"
+                        <a href="#destination"
                             class="  my-section nav-link  block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
                             Study Destination
 
@@ -145,11 +156,11 @@ html, body {
                             </a> <a href="/Pages/australia.html"
                                 class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
                                 <img src="/assets/Flag/australia_flag.png" class="h-4 px-2" alt="Australia Flag">
-                                Australia </a> <a href="#"
+                                Australia </a> <a href="/Pages/germany.html"
                                 class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
                                 <img src="/assets/Flag/germany_flag.png" class="h-4 px-2" alt="Germany Flag"> Germany
                             </a>
-                            <div class="border-t border-gray-100 my-1"></div> <a href="#"
+                            <div class="border-t border-gray-100 my-1"></div> <a href="/Pages/uk.html"
                                 class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
                                 <img src="/assets/Flag/united_kingdom_flag.png" class="h-4 px-2" alt="Uk Flag"> United
                                 Kingdom </a>
@@ -157,43 +168,22 @@ html, body {
                     </li>
 
                     <li class="dropdown relative">
-                        <a href="#"
+                        <a href="#programs"
                             class="  my-section nav-link block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
                             Programs
                         </a>
-                        <div
-                            class="dropdown-menu absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-1 z-50 opacity-0 invisible transition-all duration-300 transform -translate-y-2 border border-gray-100">
-                            <div class="grid grid-cols- gap-1 p-2"> <a href="#"
-                                    class="flex items-center p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200">
-                                    <div class="bg-blue-100 p-2 rounded-lg mr-3"> <i
-                                            class="fas fa-book text-blue-600"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-medium text-gray-800">Undergraduate</div>
-                                        <div class="text-xs text-gray-500">Proceeded after +2 study in Nepal</div>
-                                    </div>
-                                </a> <a href="#"
-                                    class="flex items-center p-3 rounded-lg hover:bg-blue-50 transition-colors duration-200">
-                                    <div class="bg-red-100 p-2 rounded-lg mr-3"> <i
-                                            class="fas fa-headset text-red-600"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-medium text-gray-800">Master's Degree</div>
-                                        <div class="text-xs text-gray-500">Proceeded after bachelors in Nepal</div>
-                                    </div>
-                                </a> </div>
-                        </div>
+                  
                     </li>
 
                     <li>
-                        <a href="#"
+                        <a href="#process"
                             class="  my-section nav-link block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
                             Process
                         </a>
                     </li>
 
                     <li>
-                        <a href="#"
+                        <a href="/Pages/contact.html"
                             class="  my-section nav-link block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
                             Contact
                         </a>
@@ -205,20 +195,24 @@ html, body {
         </div>
     </nav>
     <!-- Nav bar end -->
-        <!--Top section-->
-  <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto relative z-10 w-full">
-        <div class="text-center animate-fade-in">
-            <span class="text-green-600 text-base sm:text-lg md:text-xl">Study Destination</span>
-            <h1 class="mt-5 hero-title text-5  xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-6 font-semibold leading-tight" style="color: var(--aussie-green);">
-                AUSTRALIA
-            </h1>
-            <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed px-4">
-                Where world-class education meets laid-back lifestyle. <br class="hidden sm:block"> Experience excellence down under.
-            </p>
+
+    <!--Top section-->
+    <section
+        class="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto relative z-10 w-full">
+            <div class="text-center animate-fade-in">
+                <span class="text-green-600 text-base sm:text-lg md:text-xl">Study Destination</span>
+                <h1 class="mt-5 hero-title text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-6 font-semibold leading-tight" style="color: var(--uk-navy);">
+                    AUSTRALIA
+                </h1>
+                <p
+                    class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed px-4">
+                    Where world-class education meets laid-back lifestyle. <br class="hidden sm:block"> Experience
+                    excellence down under.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!--Box Section-->
 
@@ -246,7 +240,7 @@ html, body {
     <!-- Programs Section -->
     <section id="programs" class="py-24 px-4 stripe-bg relative">
         <div class="absolute top-0 right-0 section-number" style="color: var(--red);"></div>
-        
+
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="mb-16 text-center">
                 <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">ACADEMIC PATHWAYS</div>
@@ -260,15 +254,19 @@ html, body {
                 <!-- Undergraduate -->
                 <div class="relative bg-white p-10 shadow-2xl r border-t-4 border-red-600 overflow-hidden group">
                     <!-- Color overlay on hover -->
-                    <div class="absolute inset-0 bg-red-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
-                    
+                    <div
+                        class="absolute inset-0 bg-red-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                    </div>
+
                     <div class="relative z-10">
-                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition">
+                        <div
+                            class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition">
                             <i class="fas fa-graduation-cap text-3xl text-red-600 "></i>
                         </div>
                         <h3 class="hero-title text-4xl mb-4 text-navy ">Undergraduate</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed ">
-                            Bachelor's degrees (4 years). Liberal arts education with major flexibility. Start after +2 completion.
+                            Bachelor's degrees (4 years). Liberal arts education with major flexibility. Start after +2
+                            completion.
                         </p>
                         <ul class="space-y-3 mb-6">
                             <li class="flex items-start">
@@ -290,8 +288,10 @@ html, body {
                 <!-- Graduate -->
                 <div class="relative bg-white p-10 shadow-2xl  border-t-4 border-blue-900 overflow-hidden group">
                     <!-- Color overlay on hover -->
-                    <div class="absolute inset-0 bg-blue-900 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
-                    
+                    <div
+                        class="absolute inset-0 bg-blue-900 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                    </div>
+
                     <div class="relative z-10">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 ">
                             <i class="fas fa-user-graduate text-3xl text-blue-900 "></i>
@@ -314,15 +314,17 @@ html, body {
                                 <span class="text-gray-700 ">Test: GRE/GMAT + TOEFL/IELTS</span>
                             </li>
                         </ul>
-                       
+
                     </div>
                 </div>
 
                 <!-- PhD -->
                 <div class="relative bg-white p-10 shadow-2xl  border-t-4 border-gold overflow-hidden group">
                     <!-- Color overlay on hover -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-orange-600 transform translate-y-full "></div>
-                    
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-orange-600 transform translate-y-full ">
+                    </div>
+
                     <div class="relative z-10">
                         <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 ">
                             <i class="fas fa-flask text-3xl " style="color: var(--gold);"></i>
@@ -345,22 +347,26 @@ html, body {
                                 <span class="text-gray-700 ">Often fully funded</span>
                             </li>
                         </ul>
-                        
+
                     </div>
                 </div>
 
                 <!-- Community College / Pathway Programs -->
                 <div class="relative bg-white p-10 shadow-2xl  border-t-4 border-green-600 overflow-hidden group">
-                    
-                    <div class="absolute inset-0 bg-green-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
-                    
+
+                    <div
+                        class="absolute inset-0 bg-green-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                    </div>
+
                     <div class="relative z-10">
-                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition">
+                        <div
+                            class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition">
                             <i class="fas fa-route text-3xl text-green-600 "></i>
                         </div>
                         <h3 class="hero-title text-4xl mb-4 text-navy ">Pathway Programs</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed ">
-                            Community colleges and pathway programs. Affordable entry with transfer options to top universities.
+                            Community colleges and pathway programs. Affordable entry with transfer options to top
+                            universities.
                         </p>
                         <ul class="space-y-3 mb-6">
                             <li class="flex items-start">
@@ -376,7 +382,7 @@ html, body {
                                 <span class="text-gray-700 ">Transfer to 4-year universities</span>
                             </li>
                         </ul>
-                       
+
                     </div>
                 </div>
             </div>
@@ -385,68 +391,69 @@ html, body {
 
 
         <!-- Affordable Universities Section -->
-    <section id="universities" class="py-24 px-4 bg-white">
-        <div class="max-w-7xl mt-5 mx-auto">
-            <div class="mb-16 text-center">
-                <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">BUDGET-FRIENDLY EDUCATION</div>
-                <h2 class="hero-title text-6xl md:text-7xl mb-6 text-navy">Affordable Universities</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Quality education without breaking the bank. Excellent institutions with reasonable tuition fees.
-                </p>
-            </div>
+        <section id="universities" class="py-24 px-4 bg-white">
+            <div class="max-w-7xl mt-5 mx-auto">
+                <div class="mb-16 text-center">
+                    <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">BUDGET-FRIENDLY EDUCATION</div>
+                    <h2 class="hero-title text-6xl md:text-7xl mb-6 text-navy">Affordable Universities</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Quality education without breaking the bank. Excellent institutions with reasonable tuition
+                        fees.
+                    </p>
+                </div>
 
-            <div class="grid md:grid-cols-2 mt-5 lg:grid-cols-4 gap-6">
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl  mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">University of the Sunshine Coast (USC)</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Sunshine Coast, QLD</p>
-                    <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
-                </div>
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">University of Southern Queensland (UniSQ)</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Toowoomba, QLD</p>
-                    <p class="text-xs text-green-600 font-bold">AUD $24,800-$32,000/year</p>
-                </div>
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">Federation University Australia</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Ballarat, VIC</p>
-                    <p class="text-xs text-green-600 font-bold">$AUD $24,000-$29,000/year</p>
-                </div>
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">University of New England (UNE)</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Armidale, NSW</p>
-                    <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
-                </div>
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">Charles Sturt University (CSU)</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Multiple Regional Campuses, NSW</p>
-                    <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
-                </div>
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">Southern Cross University (SCU)</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Lismore / Gold Coast, NSW/QLD</p>
-                    <p class="text-xs text-green-600 font-bold">AUD $25,000-$31,000/year</p>
-                </div>
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">Central Queensland University (CQUniversity)</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Rockhampton, QLD</p>
-                    <p class="text-xs text-green-600 font-bold">AUD $25,000-$32,000/year</p>
-                </div>
-                <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h4 class="font-bold text-xl mb-2 text-navy">Victoria University (VU)</h4>
-                    <p class="text-sm text-gray-600 mono-text mb-2">Melbourne, VIC</p>
-                    <p class="text-xs text-green-600 font-bold">AUD $25,000-$30,000/year</p>
+                <div class="grid md:grid-cols-2 mt-5 lg:grid-cols-4 gap-6">
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl  mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">University of the Sunshine Coast (USC)</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Sunshine Coast, QLD</p>
+                        <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">University of Southern Queensland (UniSQ)</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Toowoomba, QLD</p>
+                        <p class="text-xs text-green-600 font-bold">AUD $24,800-$32,000/year</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">Federation University Australia</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Ballarat, VIC</p>
+                        <p class="text-xs text-green-600 font-bold">$AUD $24,000-$29,000/year</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">University of New England (UNE)</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Armidale, NSW</p>
+                        <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">Charles Sturt University (CSU)</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Multiple Regional Campuses, NSW</p>
+                        <p class="text-xs text-green-600 font-bold">AUD $24,000-$30,000/year</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">Southern Cross University (SCU)</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Lismore / Gold Coast, NSW/QLD</p>
+                        <p class="text-xs text-green-600 font-bold">AUD $25,000-$31,000/year</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">Central Queensland University (CQUniversity)</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Rockhampton, QLD</p>
+                        <p class="text-xs text-green-600 font-bold">AUD $25,000-$32,000/year</p>
+                    </div>
+                    <div class="p-6 border-2 border-gray-200 hover:border-red-600 transition card-hover bg-cream">
+                        <div class="text-4xl mb-4">🎓</div>
+                        <h4 class="font-bold text-xl mb-2 text-navy">Victoria University (VU)</h4>
+                        <p class="text-sm text-gray-600 mono-text mb-2">Melbourne, VIC</p>
+                        <p class="text-xs text-green-600 font-bold">AUD $25,000-$30,000/year</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </section>
 
 
@@ -465,17 +472,22 @@ html, body {
             <!-- Timeline Container -->
             <div class="max-w-5xl mx-auto relative">
                 <!-- Vertical Line - Hidden on mobile, visible on desktop -->
-                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-600 via-blue-900 to-red-600 top-0"></div>
+                <div
+                    class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-600 via-blue-900 to-red-600 top-0">
+                </div>
 
                 <!-- Mobile Vertical Line -->
-                <div class="md:hidden absolute left-8 w-1 h-full bg-gradient-to-b from-red-600 via-blue-900 to-red-600 top-0"></div>
+                <div
+                    class="md:hidden absolute left-8 w-1 h-full bg-gradient-to-b from-red-600 via-blue-900 to-red-600 top-0">
+                </div>
 
                 <!-- Step 1: Research & Planning -->
                 <div class="relative  mb-12 md:mb-16">
                     <!-- Mobile Layout -->
                     <div class="md:hidden flex gap-6">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                            <div
+                                class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
                                 <i class="fas fa-search text-white text-xl"></i>
                             </div>
                         </div>
@@ -484,10 +496,12 @@ html, body {
                                 <div class="mono-text text-xs text-red-600 mb-2">STEP 01</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Research & Planning</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Explore Australian universities, courses, and requirements. Shortlist 5-8 institutions that match your academic profile and career goals.
+                                    Explore Australian universities, courses, and requirements. Shortlist 5-8
+                                    institutions that match your academic profile and career goals.
                                 </p>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">4-6 months before</span>
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">4-6 months
+                                        before</span>
                                 </div>
                             </div>
                         </div>
@@ -501,17 +515,20 @@ html, body {
                                 <div class="mono-text text-xs text-red-600 mb-2">STEP 01</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Research & Planning</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Explore Australian universities, courses, and requirements. Shortlist 5-8 institutions that match your academic profile and career goals.
+                                    Explore Australian universities, courses, and requirements. Shortlist 5-8
+                                    institutions that match your academic profile and career goals.
                                 </p>
                                 <div class="mt-4 flex justify-end">
-                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">4-6 months before</span>
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">4-6 months
+                                        before</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Center Node -->
                         <div class="flex-shrink-0 z-10">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <div
+                                class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                                 <i class="fas fa-search text-white text-xl"></i>
                             </div>
                         </div>
@@ -526,7 +543,8 @@ html, body {
                     <!-- Mobile Layout -->
                     <div class="md:hidden flex gap-6">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                            <div
+                                class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
                                 <i class="fas fa-pencil-alt text-white text-xl"></i>
                             </div>
                         </div>
@@ -543,7 +561,8 @@ html, body {
                                     <li>• Cambridge English Advanced</li>
                                 </ul>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">3-4 months before</span>
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">3-4 months
+                                        before</span>
                                 </div>
                             </div>
                         </div>
@@ -556,7 +575,8 @@ html, body {
 
                         <!-- Center Node -->
                         <div class="flex-shrink-0 z-10">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <div
+                                class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                                 <i class="fas fa-pencil-alt text-white text-xl"></i>
                             </div>
                         </div>
@@ -575,7 +595,8 @@ html, body {
                                     <li>• Cambridge English Advanced</li>
                                 </ul>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">3-4 months before</span>
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">3-4 months
+                                        before</span>
                                 </div>
                             </div>
                         </div>
@@ -587,7 +608,8 @@ html, body {
                     <!-- Mobile Layout -->
                     <div class="md:hidden flex gap-6">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                            <div
+                                class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
                                 <i class="fas fa-file-alt text-white text-xl"></i>
                             </div>
                         </div>
@@ -605,7 +627,8 @@ html, body {
                                     <li>• CV and passport copy</li>
                                 </ul>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-3 months before</span>
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-3 months
+                                        before</span>
                                 </div>
                             </div>
                         </div>
@@ -628,14 +651,16 @@ html, body {
                                     <li>• CV and passport copy</li>
                                 </ul>
                                 <div class="mt-4 flex justify-end">
-                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-3 months before</span>
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-3 months
+                                        before</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Center Node -->
                         <div class="flex-shrink-0 z-10">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <div
+                                class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                                 <i class="fas fa-file-alt text-white text-xl"></i>
                             </div>
                         </div>
@@ -650,7 +675,8 @@ html, body {
                     <!-- Mobile Layout -->
                     <div class="md:hidden flex gap-6">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                            <div
+                                class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
                                 <i class="fas fa-paper-plane text-white text-xl"></i>
                             </div>
                         </div>
@@ -659,10 +685,12 @@ html, body {
                                 <div class="mono-text text-xs text-blue-900 mb-2">STEP 04</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Submit Applications</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Apply directly through university websites or authorized agents. Pay application fees and submit all required materials.
+                                    Apply directly through university websites or authorized agents. Pay application
+                                    fees and submit all required materials.
                                 </p>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Aug-Oct / Feb-Apr</span>
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Aug-Oct /
+                                        Feb-Apr</span>
                                 </div>
                             </div>
                         </div>
@@ -675,7 +703,8 @@ html, body {
 
                         <!-- Center Node -->
                         <div class="flex-shrink-0 z-10">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <div
+                                class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                                 <i class="fas fa-paper-plane text-white text-xl"></i>
                             </div>
                         </div>
@@ -686,10 +715,12 @@ html, body {
                                 <div class="mono-text text-xs text-blue-900 mb-2">STEP 04</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Submit Applications</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Apply directly through university websites or authorized agents. Pay application fees and submit all required materials.
+                                    Apply directly through university websites or authorized agents. Pay application
+                                    fees and submit all required materials.
                                 </p>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Aug-Oct / Feb-Apr</span>
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Aug-Oct /
+                                        Feb-Apr</span>
                                 </div>
                             </div>
                         </div>
@@ -701,7 +732,8 @@ html, body {
                     <!-- Mobile Layout -->
                     <div class="md:hidden flex gap-6">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                            <div
+                                class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
                                 <i class="fas fa-envelope-open-text text-white text-xl"></i>
                             </div>
                         </div>
@@ -710,10 +742,12 @@ html, body {
                                 <div class="mono-text text-xs text-red-600 mb-2">STEP 05</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Receive Offer Letter</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Universities typically respond within 2-6 weeks. You'll receive either a Conditional or Unconditional Offer Letter based on your application.
+                                    Universities typically respond within 2-6 weeks. You'll receive either a Conditional
+                                    or Unconditional Offer Letter based on your application.
                                 </p>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-6 weeks wait</span>
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-6 weeks
+                                        wait</span>
                                 </div>
                             </div>
                         </div>
@@ -727,17 +761,20 @@ html, body {
                                 <div class="mono-text text-xs text-red-600 mb-2">STEP 05</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Receive Offer Letter</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Universities typically respond within 2-6 weeks. You'll receive either a Conditional or Unconditional Offer Letter based on your application.
+                                    Universities typically respond within 2-6 weeks. You'll receive either a Conditional
+                                    or Unconditional Offer Letter based on your application.
                                 </p>
                                 <div class="mt-4 flex justify-end">
-                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-6 weeks wait</span>
+                                    <span class="px-3 py-1 bg-red-50 text-red-600 text-xs rounded-full">2-6 weeks
+                                        wait</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Center Node -->
                         <div class="flex-shrink-0 z-10">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <div
+                                class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                                 <i class="fas fa-envelope-open-text text-white text-xl"></i>
                             </div>
                         </div>
@@ -752,7 +789,8 @@ html, body {
                     <!-- Mobile Layout -->
                     <div class="md:hidden flex gap-6">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                            <div
+                                class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
                                 <i class="fas fa-check-circle text-white text-xl"></i>
                             </div>
                         </div>
@@ -761,10 +799,12 @@ html, body {
                                 <div class="mono-text text-xs text-blue-900 mb-2">STEP 06</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Accept Offer & Pay Fees</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Accept your offer, pay tuition deposit and OSHC. University will issue Confirmation of Enrollment (CoE) for visa application.
+                                    Accept your offer, pay tuition deposit and OSHC. University will issue Confirmation
+                                    of Enrollment (CoE) for visa application.
                                 </p>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Within offer deadline</span>
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Within offer
+                                        deadline</span>
                                 </div>
                             </div>
                         </div>
@@ -777,7 +817,8 @@ html, body {
 
                         <!-- Center Node -->
                         <div class="flex-shrink-0 z-10">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <div
+                                class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                                 <i class="fas fa-check-circle text-white text-xl"></i>
                             </div>
                         </div>
@@ -788,10 +829,12 @@ html, body {
                                 <div class="mono-text text-xs text-blue-900 mb-2">STEP 06</div>
                                 <h3 class="hero-title text-2xl mb-3 text-navy">Accept Offer & Pay Fees</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
-                                    Accept your offer, pay tuition deposit and OSHC. University will issue Confirmation of Enrollment (CoE) for visa application.
+                                    Accept your offer, pay tuition deposit and OSHC. University will issue Confirmation
+                                    of Enrollment (CoE) for visa application.
                                 </p>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Within offer deadline</span>
+                                    <span class="px-3 py-1 bg-blue-50 text-blue-900 text-xs rounded-full">Within offer
+                                        deadline</span>
                                 </div>
                             </div>
                         </div>
@@ -803,7 +846,8 @@ html, body {
                     <!-- Mobile Layout -->
                     <div class="md:hidden flex gap-6">
                         <div class="flex-shrink-0">
-                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
+                            <div
+                                class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white relative z-10">
                                 <i class="fas fa-passport text-white text-xl"></i>
                             </div>
                         </div>
@@ -822,7 +866,8 @@ html, body {
                                     <li>• Arrange GTE statement</li>
                                 </ul>
                                 <div class="mt-4">
-                                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">2-4 months processing</span>
+                                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">2-4 months
+                                        processing</span>
                                 </div>
                             </div>
                         </div>
@@ -846,14 +891,16 @@ html, body {
                                     <li>• Arrange GTE statement</li>
                                 </ul>
                                 <div class="mt-4 flex justify-end">
-                                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">2-4 months processing</span>
+                                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">2-4 months
+                                        processing</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Center Node -->
                         <div class="flex-shrink-0 z-10">
-                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <div
+                                class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                                 <i class="fas fa-passport text-white text-xl"></i>
                             </div>
                         </div>
@@ -864,10 +911,10 @@ html, body {
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
 
     <!-- Required Documents Section -->
-   <section class="py-24 px-4 bg-navy text-white">
+    <section class="py-24 px-4 bg-navy text-white">
         <div class="max-w-7xl mx-auto">
             <div class="mb-16 text-center">
                 <div class="mono-text text-red-500 mb-4 font-semibold text-2xl tracking-widest">CHECKLIST</div>
@@ -1005,7 +1052,8 @@ html, body {
 
                 <!-- Document 6 -->
                 <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10 card-hover">
-                    <div style="background-color: black;" class="w-16 h-16  rounded-full flex items-center justify-center mb-6">
+                    <div style="background-color: black;"
+                        class="w-16 h-16  rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-passport text-white text-2xl"></i>
                     </div>
                     <h3 style="color: black;" class="hero-title text-2xl mb-4">Passport & ID</h3>
@@ -1033,14 +1081,15 @@ html, body {
                 <div class="inline-block mt-12 bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
                     <p class=" mt-12 text-yellow-300">
                         <i class=" mt-12 fas fa-lightbulb mr-2"></i>
-                        <strong>Pro Tip:</strong> Most Australian universities have 2 intakes (February & July). Start preparing documents 4-6 months before your intended intake!
+                        <strong>Pro Tip:</strong> Most Australian universities have 2 intakes (February & July). Start
+                        preparing documents 4-6 months before your intended intake!
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-   <section class="py-24 px-4 bg-cream">
+    <section class="py-24 px-4 bg-cream">
         <div class="max-w-7xl mx-auto">
             <div class="mb-16 text-center">
                 <div class="mono-text text-red-600 text-sm mb-4 tracking-widest">INVESTMENT IN YOUR FUTURE</div>
@@ -1053,17 +1102,18 @@ html, body {
             <div class="grid mb-12 lg:grid-cols-2 gap-12 mb-16">
                 <!-- Cost Breakdown -->
                 <div class="bg-white p-10 mt-12 rounded-lg shadow-2xl border-t-4 border-red-600">
-                    <h3 style="margin-top: 10px;" class="mt-12 hero-title text-3xl mb-6 text-navy">Annual Cost Breakdown</h3>
-                    
+                    <h3 style="margin-top: 10px;" class="mt-12 hero-title text-3xl mb-6 text-navy">Annual Cost Breakdown
+                    </h3>
+
                     <div class="space-y-6 gap-4">
-                        <div  class="border-b border-gray-200 mr-10 pb-4">
+                        <div class="border-b border-gray-200 mr-10 pb-4">
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center">
                                     <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
                                         <i class="fas fa-university text-red-600"></i>
                                     </div>
-                                    <div style="margin-left: 10px;" class="ml-5" >
-                                        <h4  class=" font-bold text-lg text-navy">Tuition Fees</h4>
+                                    <div style="margin-left: 10px;" class="ml-5">
+                                        <h4 class=" font-bold text-lg text-navy">Tuition Fees</h4>
                                         <p class="text-sm text-gray-500">Per academic year</p>
                                     </div>
                                 </div>
@@ -1080,7 +1130,7 @@ html, body {
                                     <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                                         <i class="fas fa-home text-blue-600"></i>
                                     </div>
-                                    <div style="margin-left: 10px;" >
+                                    <div style="margin-left: 10px;">
                                         <h4 class="font-bold text-lg text-navy">Housing & Food</h4>
                                         <p class="text-sm text-gray-500">On/off campus</p>
                                     </div>
@@ -1095,7 +1145,8 @@ html, body {
                         <div class="border-b border-gray-200 pb-4">
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                    <div
+                                        class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                                         <i class="fas fa-book text-green-600"></i>
                                     </div>
                                     <div style="margin-left: 10px;">
@@ -1113,7 +1164,8 @@ html, body {
                         <div class="border-b border-gray-200 pb-4">
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                    <div
+                                        class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
                                         <i class="fas fa-heartbeat text-purple-600"></i>
                                     </div>
                                     <div style="margin-left: 10px;">
@@ -1131,7 +1183,8 @@ html, body {
                         <div class="pb-4">
                             <div class="flex justify-between items-center mb-2">
                                 <div class="flex items-center">
-                                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                                    <div
+                                        class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
                                         <i class="fas fa-shopping-bag text-yellow-600"></i>
                                     </div>
                                     <div style="margin-left: 10px;">
@@ -1168,16 +1221,18 @@ html, body {
                         <!-- Scholarships -->
                         <div class="p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
                             <div class="flex items-start">
-                                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <div
+                                    class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                     <i class="fas fa-award text-white"></i>
                                 </div>
                                 <div style="margin-left: 10px;">
                                     <h4 class="font-bold text-xl mb-2 text-navy">Scholarships</h4>
                                     <p class="text-gray-700 mb-3 leading-relaxed">
-                                        Merit-based scholarships available from universities and the Australian Government. Can cover partial to full tuition.
+                                        Merit-based scholarships available from universities and the Australian
+                                        Government. Can cover partial to full tuition.
                                     </p>
                                     <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• University-specific scholarships (e.g., Vice-Chancellor's)    </li>
+                                        <li>• University-specific scholarships (e.g., Vice-Chancellor's) </li>
                                         <li>• Australia Awards (Government funded)</li>
                                         <li>• Destination Australia (Regional scholarships)</li>
                                     </ul>
@@ -1188,18 +1243,21 @@ html, body {
                         <!-- Assistantships -->
                         <div class="p-6 bg-green-50 rounded-lg border-l-4 border-green-600">
                             <div class="flex items-start">
-                                <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <div
+                                    class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                     <i class="fas fa-chalkboard-teacher text-white"></i>
                                 </div>
                                 <div style="margin-left: 10px;">
                                     <h4 class="font-bold text-xl mb-2 text-navy">Assistantships (Graduate)</h4>
                                     <p class="text-gray-700 mb-3 leading-relaxed">
-                                        Rare compared to the U.S. Some research-focused master's and PhDs may include a stipend.
+                                        Rare compared to the U.S. Some research-focused master's and PhDs may include a
+                                        stipend.
                                     </p>
                                     <ul class="text-sm text-gray-600 space-y-1">
                                         <li>• Research Assistant (RA) roles for PhD candidates</li>
-                                        
-                                        <li>• APA (Australian Postgraduate Award) for domestic students, some unis extend to internationals</li>
+
+                                        <li>• APA (Australian Postgraduate Award) for domestic students, some unis
+                                            extend to internationals</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1208,11 +1266,13 @@ html, body {
                         <!-- Student Loans -->
                         <div class="p-6 bg-purple-50 rounded-lg border-l-4 border-purple-600">
                             <div class="flex items-start">
-                                <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <div
+                                    class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                     <i class="fas fa-hand-holding-usd text-white"></i>
                                 </div style="margin-left: 10px;">
                                 <div style="margin-left: 10px;">
-                                    <h4 style="margin-left: 10px;"class="font-bold text-xl mb-2 text-navy">Education Loans</h4>
+                                    <h4 style="margin-left: 10px;" class="font-bold text-xl mb-2 text-navy">Education
+                                        Loans</h4>
                                     <p class="text-gray-700 mb-3 leading-relaxed">
                                         Student loans from banks in Nepal or specialized international education loans.
                                     </p>
@@ -1228,9 +1288,10 @@ html, body {
                         <!-- On-Campus Work -->
                         <div class="p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-600">
                             <div class="flex items-start">
-                                <div class="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <div
+                                    class="w-12 h-12 bg-yellow-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                     <i class="fas fa-briefcase text-white"></i>
-                                </div >
+                                </div>
                                 <div style="margin-left: 10px;">
                                     <h4 class="font-bold text-xl mb-2 text-navy">On-Campus Work</h4>
                                     <p class="text-gray-700 mb-3 leading-relaxed">
@@ -1270,21 +1331,24 @@ html, body {
                         <div class="text-center p-6 bg-white/10 backdrop-blur rounded-lg">
                             <i class="fas fa-certificate text-4xl mb-4 text-green-400"></i>
                             <h4 style="color: black;" class="font-bold text-lg mb-2">Scholarship Letter</h4>
-                            <p  style="color: black;"class="text-sm text-gray-300">Official award letter if applicable</p>
+                            <p style="color: black;" class="text-sm text-gray-300">Official award letter if applicable
+                            </p>
                         </div>
                     </div>
 
                     <div class="mt-8 text-center">
-                        <button class="px-8 py-4 bg-red-600 text-white mono-text rounded-lg font-bold hover:bg-red-700 transition transform hover:scale-105 shadow-lg">
+                        <button
+                            class="px-8 py-4 bg-red-600 text-white mono-text rounded-lg font-bold hover:bg-red-700 transition transform hover:scale-105 shadow-lg">
                             DOWNLOAD FINANCIAL CHECKLIST
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>  
-    </body>
-    </html>
-    </body>
+    </section>
+</body>
 
-    </html>
+</html>
+</body>
+
+</html>
