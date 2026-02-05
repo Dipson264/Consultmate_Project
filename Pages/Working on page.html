@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currently Working On It</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/asset">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-slate-950 text-slate-100">
+
+     <!-- Nav  bar start -->
+    <nav class=" fixed top-4 z-50 shadow rounded-full py left-1/2 -translate-x-1/2 " style=" background-color: #ffffff;
+    width: 95%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3  ">
+
+            <!-- Logo -->
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/assets/Others/logo with text .png" class="h-10" alt="Logo">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" 8 aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+            <!-- Menu -->
+            <div id="navbar-default" class="hidden md:block
+         md:relative absolute
+         left-0 w-full
+         md:w-auto
+         mt-2 md:mt-0
+         px-4 md:px-0">
+                <ul
+                    class="flex flex-col md:flex-row md:items-center md:space-x-1 mt-4 md:mt-0 bg-gray-50 md:bg-transparent rounded-lg p-2 md:p-0">
+
+                    <li>
+                        <a href="/index.html"
+                            class="  my-section nav-link  block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="dropdown relative">
+                        <a href="#destination"
+                            class="  my-section nav-link  block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                            Study Destination
+
+
+                        </a>
+
+                        <div class="dropdown-menu absolute left-0 mt-2  bg-white rounded-lg shadow-xl py-1 z-50 opacity-0 invisible transition-all duration-300 transform -translate-y-2 border border-gray-100"
+                            style="width: 195;">
+                            <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                                Countries</div>
+                            <a href="/Pages/america.html"
+                                class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                <img src="/assets/Flag/america_flag.png" class="h-4 px-2" alt="America Flag"> America
+                            </a> <a href="Pages/australia.html"
+                                class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                <img src="/assets/Flag/australia_flag.png" class="h-4 px-2" alt="Australia Flag">
+                                Australia </a> <a href="/Pages/germany.html"
+                                class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                <img src="/assets/Flag/germany_flag.png" class="h-4 px-2" alt="Germany Flag"> Germany
+                            </a>
+                            <div class="border-t border-gray-100 my-1"></div> <a href="/Pages/uk.html"
+                                class="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 flex items-center transition-colors duration-200">
+                                <img src="/assets/Flag/united_kingdom_flag.png" class="h-4 px-2" alt="Uk Flag"> United
+                                Kingdom </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown relative">
+                        <a href="#programs"
+                            class="  my-section nav-link block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                            Programs
+                        </a>
+                  
+                    </li>
+
+                    <li>
+                        <a href="#process"
+                            class="  my-section nav-link block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                            Process
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/Pages/contact.html"
+                            class="  my-section nav-link block px-4 py-2 font-semibold text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-600">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Nav bar end -->
+
+  <div class="max-w-lg w-full px-6 text-center">
+
+    <!-- Badge -->
+    <span class="inline-block mb-4 px-4 py-1 text-sm rounded-full bg-white/10 text-slate-200">
+      In Progress
+    </span>
+
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">
+      We’re Working on This Page
+    </h1>
+
+    <!-- Description -->
+    <p class="text-slate-300 leading-relaxed mb-8">
+      This section is currently under development.  
+      We’re refining the content to make sure everything here is clear, useful,
+      and up to date.
+    </p>
+
+    <!-- Loader -->
+    <div class="flex justify-center mb-6">
+      <div class="h-12 w-12 rounded-full border-4 border-white/20 border-t-white animate-spin"></div>
+    </div>
+
+    <!-- Footer text -->
+    <p class="text-sm text-slate-400">
+      Please check back soon.
+    </p>
+
+  </div>
+
+</body>
+</html>
